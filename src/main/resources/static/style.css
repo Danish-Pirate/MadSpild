@@ -1,18 +1,86 @@
-* {
-    padding: 0;
-    margin: 0;
-}
 body {
-    background-color: lightseagreen;
+    margin: 0;
+    background-color: #282828;
+
 }
 header {
-background-color: palegreen;
-width: 100%;
-border: 0 solid green;
-padding: 0;
-margin-top: 0px;
-    display: flex;
+    margin: 10px;
+    background-color: #181818;
+    width: 100%;
 }
-h1 {
-    padding: 10px;
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+td:hover {
+    padding-top: 5px;
+}
+td.image {
+    pointer-events: none;
+    padding-top: 5px;
+}
+h2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #fff;
+    font-family: Arial, ui-sans-serif;
+}
+table {
+    margin-top: 50px;
+}
+div.splash {
+    margin-top: -40px;
+    margin-left: -20px;
+    position: absolute;
+    font-size: small;
+    color: yellow;
+    transform: rotate(20deg);
+    animation: grow-and-shrink 1s ease-in forwards infinite alternate;
+}
+div.splash:hover {
+    position: absolute;
+}
+@keyframes grow-and-shrink {
+    100% {
+        font-size: large;
+    }
+}
+.housetable {
+    pointer-events: none;
+}
+.house {
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.house-frame {
+    position: absolute;
+    height: 25px;
+    width: 30px;
+    background: #f5f0f0;
+}
+.house-roof {
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #ad1424;
+}
+.house-door {
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    height: 15px;
+    width: 10px;
+    background: saddlebrown;
+}
+.house-chimney {
+    position: absolute;
+    height: 15px;
+    width: 7px;
+    background: grey;
 }

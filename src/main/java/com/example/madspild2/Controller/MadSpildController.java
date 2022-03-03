@@ -10,4 +10,8 @@ public class MadSpildController {
   public String index () {
     return "index";
   }
+  @GetMapping("/faq")
+  public String faq () {
+    return "faq";
+  }
 }
